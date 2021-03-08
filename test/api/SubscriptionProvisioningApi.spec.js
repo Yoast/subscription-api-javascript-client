@@ -19,15 +19,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.YoastSubscriptionApiClient);
+    factory(root.expect, root.SubscriptionApiJavascriptClient);
   }
-}(this, function(expect, YoastSubscriptionApiClient) {
+}(this, function(expect, SubscriptionApiJavascriptClient) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new YoastSubscriptionApiClient.SubscriptionProvisioningApi();
+    instance = new SubscriptionApiJavascriptClient.SubscriptionProvisioningApi();
   });
 
   var getProperty = function(object, getter, property) {

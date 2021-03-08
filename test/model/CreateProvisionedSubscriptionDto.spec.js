@@ -19,15 +19,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.YoastSubscriptionApiClient);
+    factory(root.expect, root.SubscriptionApiJavascriptClient);
   }
-}(this, function(expect, YoastSubscriptionApiClient) {
+}(this, function(expect, SubscriptionApiJavascriptClient) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new YoastSubscriptionApiClient.CreateProvisionedSubscriptionDto();
+    instance = new SubscriptionApiJavascriptClient.CreateProvisionedSubscriptionDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -49,37 +49,37 @@
   describe('CreateProvisionedSubscriptionDto', function() {
     it('should create an instance of CreateProvisionedSubscriptionDto', function() {
       // uncomment below and update the code to test CreateProvisionedSubscriptionDto
-      //var instane = new YoastSubscriptionApiClient.CreateProvisionedSubscriptionDto();
-      //expect(instance).to.be.a(YoastSubscriptionApiClient.CreateProvisionedSubscriptionDto);
+      //var instane = new SubscriptionApiJavascriptClient.CreateProvisionedSubscriptionDto();
+      //expect(instance).to.be.a(SubscriptionApiJavascriptClient.CreateProvisionedSubscriptionDto);
     });
 
     it('should have the property customerEmail (base name: "customerEmail")', function() {
       // uncomment below and update the code to test the property customerEmail
-      //var instane = new YoastSubscriptionApiClient.CreateProvisionedSubscriptionDto();
+      //var instane = new SubscriptionApiJavascriptClient.CreateProvisionedSubscriptionDto();
       //expect(instance).to.be();
     });
 
     it('should have the property productCode (base name: "productCode")', function() {
       // uncomment below and update the code to test the property productCode
-      //var instane = new YoastSubscriptionApiClient.CreateProvisionedSubscriptionDto();
+      //var instane = new SubscriptionApiJavascriptClient.CreateProvisionedSubscriptionDto();
       //expect(instance).to.be();
     });
 
     it('should have the property site (base name: "site")', function() {
       // uncomment below and update the code to test the property site
-      //var instane = new YoastSubscriptionApiClient.CreateProvisionedSubscriptionDto();
+      //var instane = new SubscriptionApiJavascriptClient.CreateProvisionedSubscriptionDto();
       //expect(instance).to.be();
     });
 
     it('should have the property firstName (base name: "firstName")', function() {
       // uncomment below and update the code to test the property firstName
-      //var instane = new YoastSubscriptionApiClient.CreateProvisionedSubscriptionDto();
+      //var instane = new SubscriptionApiJavascriptClient.CreateProvisionedSubscriptionDto();
       //expect(instance).to.be();
     });
 
     it('should have the property lastName (base name: "lastName")', function() {
       // uncomment below and update the code to test the property lastName
-      //var instane = new YoastSubscriptionApiClient.CreateProvisionedSubscriptionDto();
+      //var instane = new SubscriptionApiJavascriptClient.CreateProvisionedSubscriptionDto();
       //expect(instance).to.be();
     });
 

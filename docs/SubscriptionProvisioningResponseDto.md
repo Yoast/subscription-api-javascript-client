@@ -1,4 +1,4 @@
-# YoastSubscriptionApiClient.SubscriptionProvisioningResponseDto
+# SubscriptionApiJavascriptClient.SubscriptionProvisioningResponseDto
 
 ## Properties
 Name | Type | Description | Notes

@@ -19,15 +19,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.YoastSubscriptionApiClient);
+    factory(root.expect, root.SubscriptionApiJavascriptClient);
   }
-}(this, function(expect, YoastSubscriptionApiClient) {
+}(this, function(expect, SubscriptionApiJavascriptClient) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new YoastSubscriptionApiClient.SetProvisionedSiteDto();
+    instance = new SubscriptionApiJavascriptClient.SetProvisionedSiteDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -49,13 +49,13 @@
   describe('SetProvisionedSiteDto', function() {
     it('should create an instance of SetProvisionedSiteDto', function() {
       // uncomment below and update the code to test SetProvisionedSiteDto
-      //var instane = new YoastSubscriptionApiClient.SetProvisionedSiteDto();
-      //expect(instance).to.be.a(YoastSubscriptionApiClient.SetProvisionedSiteDto);
+      //var instane = new SubscriptionApiJavascriptClient.SetProvisionedSiteDto();
+      //expect(instance).to.be.a(SubscriptionApiJavascriptClient.SetProvisionedSiteDto);
     });
 
     it('should have the property site (base name: "site")', function() {
       // uncomment below and update the code to test the property site
-      //var instane = new YoastSubscriptionApiClient.SetProvisionedSiteDto();
+      //var instane = new SubscriptionApiJavascriptClient.SetProvisionedSiteDto();
       //expect(instance).to.be();
     });
 

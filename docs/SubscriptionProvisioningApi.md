@@ -1,4 +1,4 @@
-# YoastSubscriptionApiClient.SubscriptionProvisioningApi
+# SubscriptionApiJavascriptClient.SubscriptionProvisioningApi
 
 All URIs are relative to *http://my.yoast.test:3000/*
 
@@ -20,10 +20,10 @@ Creates a subscription for a customer.
 
 ### Example
 ```javascript
-import YoastSubscriptionApiClient from 'Yoast subscription API client';
+import SubscriptionApiJavascriptClient from 'Subscription-api-javascript-client';
 
-let apiInstance = new YoastSubscriptionApiClient.SubscriptionProvisioningApi();
-let body = new YoastSubscriptionApiClient.CreateProvisionedSubscriptionDto(); // CreateProvisionedSubscriptionDto | 
+let apiInstance = new SubscriptionApiJavascriptClient.SubscriptionProvisioningApi();
+let body = new SubscriptionApiJavascriptClient.CreateProvisionedSubscriptionDto(); // CreateProvisionedSubscriptionDto | 
 
 apiInstance.apiProvisioningSubscriptionsCreatePost(body, (error, data, response) => {
   if (error) {
@@ -63,10 +63,10 @@ Cancel the subscription when the period ends or immediately.
 
 ### Example
 ```javascript
-import YoastSubscriptionApiClient from 'Yoast subscription API client';
+import SubscriptionApiJavascriptClient from 'Subscription-api-javascript-client';
 
-let apiInstance = new YoastSubscriptionApiClient.SubscriptionProvisioningApi();
-let body = new YoastSubscriptionApiClient.CancelProvisionedSubscriptionDto(); // CancelProvisionedSubscriptionDto | 
+let apiInstance = new SubscriptionApiJavascriptClient.SubscriptionProvisioningApi();
+let body = new SubscriptionApiJavascriptClient.CancelProvisionedSubscriptionDto(); // CancelProvisionedSubscriptionDto | 
 let id = "38400000-8cf0-11bd-b23e-10b96e4ef00d"; // String | 
 
 apiInstance.apiProvisioningSubscriptionsIdCancelPost(bodyid, (error, data, response) => {
@@ -108,9 +108,9 @@ Get a single subscription that was provisioned for a third party
 
 ### Example
 ```javascript
-import YoastSubscriptionApiClient from 'Yoast subscription API client';
+import SubscriptionApiJavascriptClient from 'Subscription-api-javascript-client';
 
-let apiInstance = new YoastSubscriptionApiClient.SubscriptionProvisioningApi();
+let apiInstance = new SubscriptionApiJavascriptClient.SubscriptionProvisioningApi();
 let id = "38400000-8cf0-11bd-b23e-10b96e4ef00d"; // String | 
 
 apiInstance.apiProvisioningSubscriptionsIdGet(id, (error, data, response) => {
@@ -151,9 +151,9 @@ Renew the subscription for a new period.
 
 ### Example
 ```javascript
-import YoastSubscriptionApiClient from 'Yoast subscription API client';
+import SubscriptionApiJavascriptClient from 'Subscription-api-javascript-client';
 
-let apiInstance = new YoastSubscriptionApiClient.SubscriptionProvisioningApi();
+let apiInstance = new SubscriptionApiJavascriptClient.SubscriptionProvisioningApi();
 let id = "38400000-8cf0-11bd-b23e-10b96e4ef00d"; // String | 
 
 apiInstance.apiProvisioningSubscriptionsIdRenewPost(id, (error, data, response) => {
@@ -194,10 +194,10 @@ Links the subscription to a customer&#x27;s website. Setting a site the the subs
 
 ### Example
 ```javascript
-import YoastSubscriptionApiClient from 'Yoast subscription API client';
+import SubscriptionApiJavascriptClient from 'Subscription-api-javascript-client';
 
-let apiInstance = new YoastSubscriptionApiClient.SubscriptionProvisioningApi();
-let body = new YoastSubscriptionApiClient.SetProvisionedSiteDto(); // SetProvisionedSiteDto | 
+let apiInstance = new SubscriptionApiJavascriptClient.SubscriptionProvisioningApi();
+let body = new SubscriptionApiJavascriptClient.SetProvisionedSiteDto(); // SetProvisionedSiteDto | 
 let id = "38400000-8cf0-11bd-b23e-10b96e4ef00d"; // String | 
 
 apiInstance.apiProvisioningSubscriptionsIdSetSitePost(bodyid, (error, data, response) => {

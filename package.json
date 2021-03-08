@@ -1,5 +1,5 @@
 {
-  "name": "Yoast subscription API client",
+  "name": "Subscription-api-javascript-client",
   "version": "1.0.0",
   "description": "Generated API client code to manage Yoast subscriptions.",
   "license": "Unlicense",

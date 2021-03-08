@@ -19,9 +19,9 @@ import ApiClient from './ApiClient';
 * <p>
 * An AMD (recommended!) or CommonJS application will generally do something equivalent to the following:
 * <pre>
-* var YoastSubscriptionApiClient = require('index'); // See note below*.
-* var xxxSvc = new YoastSubscriptionApiClient.XxxApi(); // Allocate the API class we're going to use.
-* var yyyModel = new YoastSubscriptionApiClient.Yyy(); // Construct a model instance.
+* var SubscriptionApiJavascriptClient = require('index'); // See note below*.
+* var xxxSvc = new SubscriptionApiJavascriptClient.XxxApi(); // Allocate the API class we're going to use.
+* var yyyModel = new SubscriptionApiJavascriptClient.Yyy(); // Construct a model instance.
 * yyyModel.someProperty = 'someValue';
 * ...
 * var zzz = xxxSvc.doSomething(yyyModel); // Invoke the service.
@@ -33,8 +33,8 @@ import ApiClient from './ApiClient';
 * <p>
 * A non-AMD browser application (discouraged) might do something like this:
 * <pre>
-* var xxxSvc = new YoastSubscriptionApiClient.XxxApi(); // Allocate the API class we're going to use.
-* var yyy = new YoastSubscriptionApiClient.Yyy(); // Construct a model instance.
+* var xxxSvc = new SubscriptionApiJavascriptClient.XxxApi(); // Allocate the API class we're going to use.
+* var yyy = new SubscriptionApiJavascriptClient.Yyy(); // Construct a model instance.
 * yyyModel.someProperty = 'someValue';
 * ...
 * var zzz = xxxSvc.doSomething(yyyModel); // Invoke the service.

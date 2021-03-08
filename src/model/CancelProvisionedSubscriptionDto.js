@@ -23,7 +23,7 @@ export default class CancelProvisionedSubscriptionDto {
     * Constructs a new <code>CancelProvisionedSubscriptionDto</code>.
     * @alias module:model/CancelProvisionedSubscriptionDto
     * @class
-    * @param immediately {Boolean} Immediately will cancel the subscription directly, otherwise it will end when the period has expired.
+    * @param immediately {Boolean} (optional) Immediately will cancel the subscription directly,otherwise it will end when the period has expired. Default is false
     */
 
     constructor(immediately) {
@@ -53,7 +53,7 @@ export default class CancelProvisionedSubscriptionDto {
     }
 
     /**
-    * Immediately will cancel the subscription directly, otherwise it will end when the period has expired.
+    * (optional) Immediately will cancel the subscription directly,otherwise it will end when the period has expired. Default is false
     * @member {Boolean} immediately
     */
     'immediately' = undefined;
