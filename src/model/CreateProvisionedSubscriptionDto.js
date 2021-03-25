@@ -25,9 +25,9 @@ export default class CreateProvisionedSubscriptionDto {
     * @class
     * @param customerEmail {String} The email address of the customer.
     * @param productCode {String} The product-code of the product the subscription is for.
-    * @param site {String} (optional) The site URL that the subscription needs to be connected to.
-    * @param firstName {String} (optional) The first name of the customer.
-    * @param lastName {String} (optional) The last name of the customers.
+    * @param site {String} The site URL that the subscription needs to be connectd to.
+    * @param firstName {String} The first name of the customer.
+    * @param lastName {String} The last name of the customers.
     */
 
     constructor(customerEmail, productCode, site, firstName, lastName) {
@@ -83,17 +83,17 @@ export default class CreateProvisionedSubscriptionDto {
     */
     'productCode' = undefined;
     /**
-    * (optional) The site URL that the subscription needs to be connected to.
+    * The site URL that the subscription needs to be connectd to.
     * @member {String} site
     */
     'site' = undefined;
     /**
-    * (optional) The first name of the customer.
+    * The first name of the customer.
     * @member {String} firstName
     */
     'firstName' = undefined;
     /**
-    * (optional) The last name of the customers.
+    * The last name of the customers.
     * @member {String} lastName
     */
     'lastName' = undefined;

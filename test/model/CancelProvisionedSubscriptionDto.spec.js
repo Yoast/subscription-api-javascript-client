@@ -19,15 +19,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.SubscriptionApiJavascriptClient);
+    factory(root.expect, root.YoastProvisionerApiClient);
   }
-}(this, function(expect, SubscriptionApiJavascriptClient) {
+}(this, function(expect, YoastProvisionerApiClient) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new SubscriptionApiJavascriptClient.CancelProvisionedSubscriptionDto();
+    instance = new YoastProvisionerApiClient.CancelProvisionedSubscriptionDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -49,13 +49,13 @@
   describe('CancelProvisionedSubscriptionDto', function() {
     it('should create an instance of CancelProvisionedSubscriptionDto', function() {
       // uncomment below and update the code to test CancelProvisionedSubscriptionDto
-      //var instane = new SubscriptionApiJavascriptClient.CancelProvisionedSubscriptionDto();
-      //expect(instance).to.be.a(SubscriptionApiJavascriptClient.CancelProvisionedSubscriptionDto);
+      //var instane = new YoastProvisionerApiClient.CancelProvisionedSubscriptionDto();
+      //expect(instance).to.be.a(YoastProvisionerApiClient.CancelProvisionedSubscriptionDto);
     });
 
     it('should have the property immediately (base name: "immediately")', function() {
       // uncomment below and update the code to test the property immediately
-      //var instane = new SubscriptionApiJavascriptClient.CancelProvisionedSubscriptionDto();
+      //var instane = new YoastProvisionerApiClient.CancelProvisionedSubscriptionDto();
       //expect(instance).to.be();
     });
 

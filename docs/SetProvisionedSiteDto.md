@@ -1,4 +1,4 @@
-# SubscriptionApiJavascriptClient.SetProvisionedSiteDto
+# YoastProvisionerApiClient.SetProvisionedSiteDto
 
 ## Properties
 Name | Type | Description | Notes

@@ -27,7 +27,7 @@
   var instance;
 
   beforeEach(function() {
-    instance = new YoastProvisionerApiClient.SetProvisionedSiteDto();
+    instance = new YoastProvisionerApiClient.ProvisioningAccountApi();
   });
 
   var getProperty = function(object, getter, property) {
@@ -46,19 +46,17 @@
       object[property] = value;
   }
 
-  describe('SetProvisionedSiteDto', function() {
-    it('should create an instance of SetProvisionedSiteDto', function() {
-      // uncomment below and update the code to test SetProvisionedSiteDto
-      //var instane = new YoastProvisionerApiClient.SetProvisionedSiteDto();
-      //expect(instance).to.be.a(YoastProvisionerApiClient.SetProvisionedSiteDto);
+  describe('ProvisioningAccountApi', function() {
+    describe('apiProvisioningAccountRegenerateTokenPost', function() {
+      it('should call apiProvisioningAccountRegenerateTokenPost successfully', function(done) {
+        //uncomment below and update the code to test apiProvisioningAccountRegenerateTokenPost
+        //instance.apiProvisioningAccountRegenerateTokenPost(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
     });
-
-    it('should have the property site (base name: "site")', function() {
-      // uncomment below and update the code to test the property site
-      //var instane = new YoastProvisionerApiClient.SetProvisionedSiteDto();
-      //expect(instance).to.be();
-    });
-
   });
 
 }));

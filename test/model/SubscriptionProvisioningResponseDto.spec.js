@@ -19,15 +19,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.SubscriptionApiJavascriptClient);
+    factory(root.expect, root.YoastProvisionerApiClient);
   }
-}(this, function(expect, SubscriptionApiJavascriptClient) {
+}(this, function(expect, YoastProvisionerApiClient) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new SubscriptionApiJavascriptClient.SubscriptionProvisioningResponseDto();
+    instance = new YoastProvisionerApiClient.SubscriptionProvisioningResponseDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -49,49 +49,49 @@
   describe('SubscriptionProvisioningResponseDto', function() {
     it('should create an instance of SubscriptionProvisioningResponseDto', function() {
       // uncomment below and update the code to test SubscriptionProvisioningResponseDto
-      //var instane = new SubscriptionApiJavascriptClient.SubscriptionProvisioningResponseDto();
-      //expect(instance).to.be.a(SubscriptionApiJavascriptClient.SubscriptionProvisioningResponseDto);
+      //var instane = new YoastProvisionerApiClient.SubscriptionProvisioningResponseDto();
+      //expect(instance).to.be.a(YoastProvisionerApiClient.SubscriptionProvisioningResponseDto);
     });
 
     it('should have the property ID (base name: "ID")', function() {
       // uncomment below and update the code to test the property ID
-      //var instane = new SubscriptionApiJavascriptClient.SubscriptionProvisioningResponseDto();
+      //var instane = new YoastProvisionerApiClient.SubscriptionProvisioningResponseDto();
       //expect(instance).to.be();
     });
 
     it('should have the property subscriptionNumber (base name: "subscriptionNumber")', function() {
       // uncomment below and update the code to test the property subscriptionNumber
-      //var instane = new SubscriptionApiJavascriptClient.SubscriptionProvisioningResponseDto();
+      //var instane = new YoastProvisionerApiClient.SubscriptionProvisioningResponseDto();
       //expect(instance).to.be();
     });
 
     it('should have the property status (base name: "status")', function() {
       // uncomment below and update the code to test the property status
-      //var instane = new SubscriptionApiJavascriptClient.SubscriptionProvisioningResponseDto();
+      //var instane = new YoastProvisionerApiClient.SubscriptionProvisioningResponseDto();
       //expect(instance).to.be();
     });
 
     it('should have the property startDate (base name: "startDate")', function() {
       // uncomment below and update the code to test the property startDate
-      //var instane = new SubscriptionApiJavascriptClient.SubscriptionProvisioningResponseDto();
+      //var instane = new YoastProvisionerApiClient.SubscriptionProvisioningResponseDto();
       //expect(instance).to.be();
     });
 
     it('should have the property endDate (base name: "endDate")', function() {
       // uncomment below and update the code to test the property endDate
-      //var instane = new SubscriptionApiJavascriptClient.SubscriptionProvisioningResponseDto();
+      //var instane = new YoastProvisionerApiClient.SubscriptionProvisioningResponseDto();
       //expect(instance).to.be();
     });
 
     it('should have the property pluginDownloadUrls (base name: "pluginDownloadUrls")', function() {
       // uncomment below and update the code to test the property pluginDownloadUrls
-      //var instane = new SubscriptionApiJavascriptClient.SubscriptionProvisioningResponseDto();
+      //var instane = new YoastProvisionerApiClient.SubscriptionProvisioningResponseDto();
       //expect(instance).to.be();
     });
 
     it('should have the property siteUrl (base name: "siteUrl")', function() {
       // uncomment below and update the code to test the property siteUrl
-      //var instane = new SubscriptionApiJavascriptClient.SubscriptionProvisioningResponseDto();
+      //var instane = new YoastProvisionerApiClient.SubscriptionProvisioningResponseDto();
       //expect(instance).to.be();
     });
 
