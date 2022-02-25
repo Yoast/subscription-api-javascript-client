@@ -1,6 +1,6 @@
 # YoastProvisionerApiClient.ProvisioningAccountApi
 
-All URIs are relative to *http://my.yoast.test:3000/*
+All URIs are relative to *https://my.yoast.test:3000/*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -16,7 +16,7 @@ This route generate a new Basic Auth token that is used for provisioner accounts
 
 ### Example
 ```javascript
-import YoastProvisionerApiClient from 'Yoast provisioner API client';
+import {YoastProvisionerApiClient} from 'Yoast provisioner API client';
 
 let apiInstance = new YoastProvisionerApiClient.ProvisioningAccountApi();
 apiInstance.apiProvisioningAccountRegenerateTokenPost((error, data, response) => {

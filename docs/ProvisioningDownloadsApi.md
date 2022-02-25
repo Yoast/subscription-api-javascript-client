@@ -1,6 +1,6 @@
 # YoastProvisionerApiClient.ProvisioningDownloadsApi
 
-All URIs are relative to *http://my.yoast.test:3000/*
+All URIs are relative to *https://my.yoast.test:3000/*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -17,7 +17,7 @@ This route returns the latest version of the product that is offered to the cust
 
 ### Example
 ```javascript
-import YoastProvisionerApiClient from 'Yoast provisioner API client';
+import {YoastProvisionerApiClient} from 'Yoast provisioner API client';
 
 let apiInstance = new YoastProvisionerApiClient.ProvisioningDownloadsApi();
 let productCode = "productCode_example"; // String | The code used to create the product.
@@ -52,7 +52,7 @@ No authorization required
 
 <a name="apiProvisioningDownloadsCurrentZipGet"></a>
 # **apiProvisioningDownloadsCurrentZipGet**
-> &#x27;String&#x27; apiProvisioningDownloadsCurrentZipGet(productCode)
+> apiProvisioningDownloadsCurrentZipGet(productCode)
 
 Redirect to the current zip for the productCode.
 
@@ -60,7 +60,7 @@ If a new version is available, you can use this route to redirect to the zip of 
 
 ### Example
 ```javascript
-import YoastProvisionerApiClient from 'Yoast provisioner API client';
+import {YoastProvisionerApiClient} from 'Yoast provisioner API client';
 
 let apiInstance = new YoastProvisionerApiClient.ProvisioningDownloadsApi();
 let productCode = "productCode_example"; // String | The code used to create the product.
@@ -69,7 +69,7 @@ apiInstance.apiProvisioningDownloadsCurrentZipGet(productCode, (error, data, res
   if (error) {
     console.error(error);
   } else {
-    console.log('API called successfully. Returned data: ' + data);
+    console.log('API called successfully.');
   }
 });
 ```
@@ -82,7 +82,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-**&#x27;String&#x27;**
+null (empty response body)
 
 ### Authorization
 
@@ -91,5 +91,5 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
+ - **Accept**: Not defined
 

@@ -29,23 +29,23 @@
   var instance;
 
   beforeEach(function() {
-    instance = new YoastProvisionerApiClient.ProvisioningAccountApi();
+    instance = new YoastProvisionerApiClient.ProvisioningUsersApi();
   });
 
   describe('(package)', function() {
-    describe('ProvisioningAccountApi', function() {
-      describe('apiProvisioningAccountRegenerateTokenPost', function() {
-        it('should call apiProvisioningAccountRegenerateTokenPost successfully', function(done) {
-          // TODO: uncomment apiProvisioningAccountRegenerateTokenPost call and complete the assertions
+    describe('ProvisioningUsersApi', function() {
+      describe('apiProvisioningUserScheduleDeletePost', function() {
+        it('should call apiProvisioningUserScheduleDeletePost successfully', function(done) {
+          // TODO: uncomment, update parameter values for apiProvisioningUserScheduleDeletePost call and complete the assertions
           /*
 
-          instance.apiProvisioningAccountRegenerateTokenPost(function(error, data, response) {
+          instance.apiProvisioningUserScheduleDeletePost(body, function(error, data, response) {
             if (error) {
               done(error);
               return;
             }
             // TODO: update response assertions
-            expect(data).to.be.a(YoastProvisionerApiClient.RegenerateTokenResponseDto);
+            expect(data).to.be.a(YoastProvisionerApiClient.SubscriptionProvisioningResponseDto);
 
             done();
           });
