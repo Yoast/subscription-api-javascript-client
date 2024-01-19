@@ -1,14 +1,14 @@
 # YoastProvisionerApiClient.ProvisioningAccountApi
 
-All URIs are relative to *https://my.yoast.test:3000/*
+All URIs are relative to *https://my.yoast.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**apiProvisioningAccountRegenerateTokenPost**](ProvisioningAccountApi.md#apiProvisioningAccountRegenerateTokenPost) | **POST** /api/provisioning/account/regenerate-token | Generate a new auth token
+[**provisioningAccountControllerSetSiteForSubscription**](ProvisioningAccountApi.md#provisioningAccountControllerSetSiteForSubscription) | **POST** /api/provisioning/account/regenerate-token | Generate a new auth token
 
-<a name="apiProvisioningAccountRegenerateTokenPost"></a>
-# **apiProvisioningAccountRegenerateTokenPost**
-> RegenerateTokenResponseDto apiProvisioningAccountRegenerateTokenPost()
+<a name="provisioningAccountControllerSetSiteForSubscription"></a>
+# **provisioningAccountControllerSetSiteForSubscription**
+> RegenerateTokenResponseDto provisioningAccountControllerSetSiteForSubscription()
 
 Generate a new auth token
 
@@ -17,9 +17,14 @@ This route generate a new password for the Basic Auth that is used by provisione
 ### Example
 ```javascript
 import {YoastProvisionerApiClient} from 'Yoast provisioner API client';
+let defaultClient = YoastProvisionerApiClient.ApiClient.instance;
+// Configure HTTP basic authorization: basic
+let basic = defaultClient.authentications['basic'];
+basic.username = 'YOUR USERNAME';
+basic.password = 'YOUR PASSWORD';
 
 let apiInstance = new YoastProvisionerApiClient.ProvisioningAccountApi();
-apiInstance.apiProvisioningAccountRegenerateTokenPost((error, data, response) => {
+apiInstance.provisioningAccountControllerSetSiteForSubscription((error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -37,7 +42,7 @@ This endpoint does not need any parameter.
 
 ### Authorization
 
-No authorization required
+[basic](../README.md#basic)
 
 ### HTTP request headers
 

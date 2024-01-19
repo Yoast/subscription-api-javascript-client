@@ -1,4 +1,4 @@
-# Yoast provisioner API JavaScript client
+# Yoast provisioner API client
 
 YoastProvisionerApiClient - JavaScript client for Yoast provisioner API client
 The Yoast provisioning API

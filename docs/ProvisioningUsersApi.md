@@ -1,14 +1,14 @@
 # YoastProvisionerApiClient.ProvisioningUsersApi
 
-All URIs are relative to *https://my.yoast.test:3000/*
+All URIs are relative to *https://my.yoast.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**apiProvisioningUserScheduleDeletePost**](ProvisioningUsersApi.md#apiProvisioningUserScheduleDeletePost) | **POST** /api/provisioning/user/schedule-delete | Schedule a delete for a subscription
+[**provisioningUsersControllerScheduleDelete**](ProvisioningUsersApi.md#provisioningUsersControllerScheduleDelete) | **POST** /api/provisioning/user/schedule-delete | Schedule a delete for a subscription
 
-<a name="apiProvisioningUserScheduleDeletePost"></a>
-# **apiProvisioningUserScheduleDeletePost**
-> SubscriptionProvisioningResponseDto apiProvisioningUserScheduleDeletePost(body)
+<a name="provisioningUsersControllerScheduleDelete"></a>
+# **provisioningUsersControllerScheduleDelete**
+> SubscriptionProvisioningResponseDto provisioningUsersControllerScheduleDelete(body)
 
 Schedule a delete for a subscription
 
@@ -17,11 +17,16 @@ Schedules a customer for gdpr delete.
 ### Example
 ```javascript
 import {YoastProvisionerApiClient} from 'Yoast provisioner API client';
+let defaultClient = YoastProvisionerApiClient.ApiClient.instance;
+// Configure HTTP basic authorization: basic
+let basic = defaultClient.authentications['basic'];
+basic.username = 'YOUR USERNAME';
+basic.password = 'YOUR PASSWORD';
 
 let apiInstance = new YoastProvisionerApiClient.ProvisioningUsersApi();
 let body = new YoastProvisionerApiClient.ScheduleDeleteUserDto(); // ScheduleDeleteUserDto | 
 
-apiInstance.apiProvisioningUserScheduleDeletePost(body, (error, data, response) => {
+apiInstance.provisioningUsersControllerScheduleDelete(body, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -42,7 +47,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[basic](../README.md#basic)
 
 ### HTTP request headers
 
