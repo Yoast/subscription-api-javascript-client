@@ -29,20 +29,20 @@
   var instance;
 
   describe('(package)', function() {
-    describe('CancelProvisionedSubscriptionDto', function() {
+    describe('ProductVersionsDto', function() {
       beforeEach(function() {
-        instance = new YoastProvisionerApiClient.CancelProvisionedSubscriptionDto();
+        instance = new YoastProvisionerApiClient.ProductVersionsDto();
       });
 
-      it('should create an instance of CancelProvisionedSubscriptionDto', function() {
-        // TODO: update the code to test CancelProvisionedSubscriptionDto
-        expect(instance).to.be.a(YoastProvisionerApiClient.CancelProvisionedSubscriptionDto);
+      it('should create an instance of ProductVersionsDto', function() {
+        // TODO: update the code to test ProductVersionsDto
+        expect(instance).to.be.a(YoastProvisionerApiClient.ProductVersionsDto);
       });
 
-      it('should have the property immediately (base name: "immediately")', function() {
-        // TODO: update the code to test the property immediately
-        expect(instance).to.have.property('immediately');
-        // expect(instance.immediately).to.be(expectedValueLiteral);
+      it('should have the property versions (base name: "versions")', function() {
+        // TODO: update the code to test the property versions
+        expect(instance).to.have.property('versions');
+        // expect(instance.versions).to.be(expectedValueLiteral);
       });
 
     });
